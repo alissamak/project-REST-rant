@@ -16,3 +16,20 @@ REST-Rant is an app where usera can review restaurants.
 | POST | /places/:id/rant | Create a rant (comment) about a particular place |
 | DELETE | /places/:id/rant/:rantId | Delete a rant (comment) about a particular place |
 | GET | * | 404 page(matches any route no defined above) |
+
+## Places (Restaurants) Data
+
+1. Rise
+    - Durham, NC
+    - Biscuits & Donuts
+    - ![Rise logo](https://myoctocat.com/assets/images/base-octocat.svg)
+
+2. Chicken & Waffles
+    - Durham, NC
+    - Chicken & Waffles
+    - ![Chicken & Waffles Logo](https://myoctocat.com/assets/images/base-octocat.svg)
+
+3. Bojangles
+    - Durham, NC
+    - Chicken & Biscuits
+    - ![Bojangles Logo](https://myoctocat.com/assets/images/base-octocat.svg)
