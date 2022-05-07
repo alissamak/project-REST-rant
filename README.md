@@ -2,9 +2,9 @@
 REST-Rant is an app where usera can review restaurants.
 
 ## Tech Usage
-Stack: Express, NodeJS
-Server-side Rendering: JSX
-Node Modules: dotenv, express-react-views
+### Stack: Express, NodeJS
+### Server-side Rendering: JSX
+### Node Modules: dotenv, express-react-views
 
 ## Routes
 | **Method** | **Path** | **Purpose** |
