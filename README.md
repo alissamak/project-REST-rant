@@ -32,4 +32,4 @@ REST-Rant is an app where usera can review restaurants.
 3. Bojangles
     - Durham, NC
     - Chicken & Biscuits
-    ![Bojangles Logo](https://myoctocat.com/assets/images/base-octocat.svg)
+    ![Bojangles Logo](assets/images/bojangles-logo.png)
