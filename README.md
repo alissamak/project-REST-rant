@@ -22,14 +22,14 @@ REST-Rant is an app where usera can review restaurants.
 1. Rise
     - Durham, NC
     - Biscuits & Donuts
-    - ![Rise logo](/rest-rant/assets/images/rise_logo.png)
+    ![Rise logo](/assets/images/rise_logo.png)
 
 2. Dame's Chicken & Waffles
     - Durham, NC
     - Chicken & Waffles
-    - ![Dame's Chicken & Waffles Logo](/rest-rant/assets/images/dames-logo.jpg)
+    ![Dame's Chicken & Waffles Logo](assets/images/dames-logo.jpg)
 
 3. Bojangles
     - Durham, NC
     - Chicken & Biscuits
-    - ![Bojangles Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fbrandlogos.net%2Fbojangles-restaurant-logo-96982.html&psig=AOvVaw07yGtGksvw2rVPg2pqUDDa&ust=1652021157154000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJCW6cLQzfcCFQAAAAAdAAAAABAJ)
+    ![Bojangles Logo](https://myoctocat.com/assets/images/base-octocat.svg)
