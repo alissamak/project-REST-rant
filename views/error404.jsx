@@ -10,8 +10,7 @@ function error404(){
                 <div>
                     <img src="http://placekitten.com/250/250" alt="Cute kitten image"></img> 
                 </div>
-                <a href="/home"><button className="btn-primary">Home Page</button></a>
-                
+                <a href="/home"><button className="btn-primary">Home Page</button></a> 
             </main>
         </Def>
     )
