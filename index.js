@@ -4,11 +4,14 @@ const app = express();
 
 
 //middleware
+app.set('views', __dirname + '/views');
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
+//middleware for public folder -- css and image files
+app.use(express.static('public'));
 
 //routes
-app.use('/places', require('./controllers/places'))
+app.use('/places', require('./controllers/places'));
 
 //home route
 app.get('/', (req, res) =>{
