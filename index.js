@@ -14,7 +14,7 @@ app.use(express.static('public'));
 app.use('/places', require('./controllers/places'));
 
 //home route
-app.get('/', (req, res) =>{
+app.get('/home', (req, res) =>{
     res.render('home');
 })
 

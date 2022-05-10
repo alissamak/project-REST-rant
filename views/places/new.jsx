@@ -5,7 +5,7 @@ function newPlace () {
     return(
         <Def>
             <main>
-                <h1>NEW</h1>
+                <h1>Add a New Place</h1>
             </main>
         </Def>
     )
