@@ -5,14 +5,14 @@ router.get('/', (req, res) => {
         name: 'Rise',
         city: 'Durham',
         state: 'NC',
-        cuisines: 'Southern Breakfast, Brunch',
-        pic: 'http://placekitten.com/250/250'
+        cuisines: 'Donuts & Biscuits',
+        pic: '/images/donuts.jpg'
       }, {
-        name: 'Bojangles',
+        name: "Dame's Chicken & Waffles",
         city: 'Durham',
         state: 'NC',
         cuisines: 'Southern Breakfast',
-        pic: 'http://placekitten.com/250/250'
+        pic: 'images/Chicken-Waffles.jpg'
       }];
       
     res.render('places/index', {places})
