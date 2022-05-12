@@ -7,7 +7,7 @@ function Def (html) {
             <title>{html.title || 'Def'}</title>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"></link>
             <link rel="stylesheet" href="/css/style.css"></link>
-            <link rel="shortcut icon" type="image/jpg" href="/public/images/cookie_favicon.ico"></link>
+            <link rel="shortcut icon" type="image/jpg" href="/images/cookie_favicon.ico"></link>
         </head>
         <body>
             <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">

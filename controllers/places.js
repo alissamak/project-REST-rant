@@ -28,7 +28,8 @@ router.post('/', (req, res) => {
   res.redirect('/places')
 })
 
-//show places
+
+//get show places
 router.get('/:id', (req, res) => {
   let id = Number(req.params.id);
   if(isNaN(id)){
@@ -39,6 +40,44 @@ router.get('/:id', (req, res) => {
   }
   else{
     res.render('places/show', {place: places[id], id})
+  }
+})
+
+//get edit places
+router.get('/:id/edit', (req, res) => {
+  let id = Number(req.params.id);
+  if(isNaN(id)){
+    res.render('error404')
+  }
+  else if(!places[id]){
+    res.render('error404')
+  }
+  else{
+    res.render('places/edit', {place: places[id], id})
+  }
+})
+
+//put edit places
+router.put('/:id', (req, res) =>{
+  let id = Number(req.params.id);
+  if(isNaN(id)){
+    res.render('error404')
+  }
+  else if(!places[id]){
+    res.render('error404')
+  }
+  else{
+    if(!req.body.pic){
+      req.body.pic = 'https://placekitten.com/100/100'
+    }
+    if(!req.body.city){
+      req.body.city = "Durham"
+    }
+    if(!req.body.state){
+      req.body.state = "NC"
+    }
+    places[id] = req.body;
+    res.redirect(`/places/${id}`);
   }
 })
 
