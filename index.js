@@ -1,7 +1,8 @@
+//modules and globals
 require('dotenv').config();
 const express = require('express');
 const app = express();
-
+const methodOverride = require('method-override');
 
 //middleware
 app.set('views', __dirname + '/views');
@@ -10,12 +11,13 @@ app.engine('jsx', require('express-react-views').createEngine());
 //middleware for public folder -- css and image files
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride('_method'));
 
 //routes
 app.use('/places', require('./controllers/places'));
 
 //home route
-app.get('/home', (req, res) =>{
+app.get('/', (req, res) =>{
     res.render('home');
 })
 
