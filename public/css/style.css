@@ -11,7 +11,7 @@ main {
 }
 
 /* nav bar */
-nav {
+/* nav {
   background-color: cornflowerblue;
   padding: 10px;
 }
@@ -29,12 +29,16 @@ nav li {
 nav a {
   color: white;
   font-size: 1.5em;
-}
+} */
 
-nav a:hover {
+nav ul{
+  text-align: left;
+  margin-left: 25px;
+}
+/* nav ul li a:hover {
   color: pink;
   text-decoration: none;
-}
+} */
 
 /* content */
 h1 {
