@@ -19,8 +19,8 @@ function show (data){
                         {/* <h3>{data.place.showEstablished()}</h3> */}
                         <h4>Serving {data.place.cuisines}</h4>
                         <br />
-                        <a href={`/places/${data.id}/edit`} className="btn btn-warning">Edit</a>
-                        <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
+                        <a href={`/places/${data.place.id}/edit`} className="btn btn-warning">Edit</a>
+                        <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}>
                             <button type="submit" className="btn btn-danger">Delete</button>
                         </form>
                     </div>

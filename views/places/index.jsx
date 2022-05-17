@@ -2,11 +2,11 @@ const React = require('react');
 const Def = require('../default');
 
 function index(data){
-    let placesFormatted = data.places.map((place, index) => {
+    let placesFormatted = data.places.map((place) => {
         return(
             <div className='col-sm-6'>
                 <h2>
-                    <a href={`/places/${index}`}>
+                    <a href={`/places/${place.id}`}>
                         {place.name}
                     </a>
                 </h2>
@@ -18,6 +18,7 @@ function index(data){
                     Located in {place.city}, {place.state}
                 </p>
             </div>
+            
         )
     })
     return(
@@ -27,6 +28,9 @@ function index(data){
                 <div className="row">
                     {placesFormatted}
                 </div>
+                <form method="GET" action="/places/new">
+                    <input className='btn btn-primary' type="submit" value="Add Place"></input>
+                </form>
             </main>
         </Def>
     )
