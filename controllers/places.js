@@ -127,7 +127,7 @@ router.put('/:id', (req, res) =>{
   //   res.redirect(`/places/${id}`);
   // }
   // res.send('PUT /:id stub')
-  db.Place.findByIdAndUpdate(req.params.id, req.body)
+  db.Place.findByIdAndUpdate(req.params.id, req.body, {runValidators: true})
     .then(() => {
       res.redirect(`/places/${req.params.id}`);
     })
