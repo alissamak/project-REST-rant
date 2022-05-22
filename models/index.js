@@ -9,3 +9,4 @@ mongoose.connect(mongooseURI, {useNewUrlParser: true, useUnifiedTopology: true},
 )
 
 module.exports.Place = require('./places');
+module.exports.Comment = require('./comment');

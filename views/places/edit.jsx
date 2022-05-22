@@ -16,6 +16,8 @@ function editPlace(data){
                             <label htmlFor='pic'>Place Picture</label>
                             <input className='form-control' id="pic" name="pic" defaultValue={data.place.pic}></input>
                         </div>
+                    </div>
+
                     <div className='row'>
                         <div className='fform-group col-sm-4'>
                             <label htmlFor='city'>City</label>
@@ -25,13 +27,17 @@ function editPlace(data){
                             <label htmlFor='state'>State</label>
                             <input className='form-control' id="state" name="state" defaultValue={data.place.state}></input>
                         </div>
-                        <div className='form-group col-sm-4'>
-                            <label htmlFor='cuisines'>Cuisines</label>
-                            <input className='form-control' id="cuisines" name="cuisines" defaultValue={data.place.cuisines} required></input>
-                        </div>
+                        <div className="form-group col-sm-4">
+                            <label htmlFor="founded">Founding Year</label>
+                            <input className="form-control" id="founded" name="founded" value={data.place.founded} />
+                        </div>    
                     </div>
-                        {/* <input className='btn btn-primary' type="submit" value="Add Place"></input> */}
+
+                    <div className='form-group'>
+                        <label htmlFor='cuisines'>Cuisines</label>
+                        <input className='form-control' id="cuisines" name="cuisines" defaultValue={data.place.cuisines} required></input>
                     </div>
+                        
                     <input className='btn btn-primary' type="submit" value="Submit Changes"></input>
                 </form>
             </main>
