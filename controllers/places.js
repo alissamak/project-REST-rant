@@ -131,7 +131,7 @@ router.delete('/:id', (req, res) => {
   // }
   // res.send('DELETE /places/:id stub')
   db.Place.findByIdAndDelete(req.params.id)
-    .then(() => {
+    .then(place => {
       res.redirect('/places');
     })
     .catch(err => {
